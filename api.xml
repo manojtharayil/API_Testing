@@ -1,0 +1,13 @@
+<suite name="RestAPI">
+    <test name="APITests">
+        <groups>
+            <run>
+                <include name="In_Progress"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.myob.RestAssuredFramework.tests"/>
+            <package name="com.myob.RestAssuredFramework"/>
+        </packages>
+    </test>
+</suite>
