@@ -7,20 +7,20 @@ import static java.lang.System.getenv;
  */
 public enum RestEndPoint {
 
-    SIT_END_POINT("https://sit-bankfeeds-service.external-data-interfaces.dev.myob.com",
-            "https://sit.login.myob.com",
-            "/oauth2/token",
-            "bankfeedsdeliveryservicesit",
-            "bankfeedsdeliveryservicetestclientsit",
-            "TEST_CLIENT_SECRET_SIT",
-            "/api/transactions"),
-    PROD_END_POINT("https://prod-bankfeeds-service.external-data-interfaces.prod.myob.com",
-            "https://login.myob.com/common",
-            "/oauth2/token",
-            "bankfeedsdeliveryserviceprd",
-            "bankfeedsdeliveryservicetestclientprod",
-            "TEST_CLIENT_SECRET_PROD",
-            "/api/transactions");
+    SIT_END_POINT("SIT_BASE_URL",
+            "SIT_AUTH_URL",
+            "SIT_AUTH_EXTENSION",
+            "SIT_ENV_RESOURCE",
+            "SIT_IDAM_CLIENT",
+            "SIT_IDAM_SECRET",
+            "SIT_COMMON_URL"),
+    PROD_END_POINT("PROD_BASE_URL",
+            "PROD_AUTH_URL",
+            "PROD_AUTH_EXTENSION",
+            "PROD_ENV_RESOURCE",
+            "PROD_IDAM_CLIENT",
+            "PROD_IDAM_SECRET",
+            "PROD_COMMON_URL");
 
     private String baseUrl;
     private String loginUrl;
